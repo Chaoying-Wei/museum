@@ -1,0 +1,306 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.aa{
+	width: 1258px;
+	height: 70px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.aa p{
+	margin-top: 15px;
+	display: inline-block;
+}
+.zhong1{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 247px;
+}
+.zhong1_box{
+	border-bottom: 1px solid #E6E6E6;
+	width: 1258px;
+	height: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+ h1{
+	text-align: center;
+	font-size: 26px;
+	color: #474747;
+	line-height: 1.2;
+	
+}
+.zhong1_box .boxp{
+	width: 810px;
+	height: 165px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -405px;
+	font-size: 14px;
+	color: #707070;
+	line-height: 1.7;
+	
+}
+.zhong2{
+	width: 100%;
+	height: 533px;
+	margin-top: 50px;
+}
+.zhong2_box{
+	border-bottom: 1px solid #E6E6E6;
+	width: 1258px;
+	height: 530px;
+	margin: 0 auto;
+	position: relative;
+}
+.box_input{
+	width: 965px;
+	height: 460px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -482px;
+	
+}
+.in1{
+	width: 100%;
+	height: 40px;
+}
+.box_input .input_bottom{
+	position: absolute;
+	bottom: 45px;
+	left: 50%;
+	margin-left: -350px;
+	width: 700px;
+	height: 70px;
+}
+.input_bottom input{
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+.in1 input{
+	width: 455px;
+	height: 40px;
+	float: left;
+	background: url(../img/input3.png) no-repeat;
+	padding: 0 20px;
+	margin-bottom: 15px;
+}
+.in1 p{
+	height: 40px;
+	float: left;
+	font-size: 14px;
+	color: #909090;
+	line-height: 40px;
+	margin-left: -40px;
+}
+ b{
+	color: #b81313;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.box_input textarea{
+	width: 445px;
+	height: 92px;
+	position: absolute;
+	right: 25px;
+	color: #474747;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background: url(../img/textarea2.png) no-repeat;
+}
+.in1 .yanzinput{
+	width: 307px;
+	height: 40px;
+	float: left;
+	color: #474747;
+	line-height: 40px;
+	font-size: 14px;
+	background: url(../img/input5.png) no-repeat;
+}
+.in1 img{
+	float: left;
+	width: 90px;
+	height: 40px;
+	margin-left: 5px;
+}
+.in1 .sapan1{
+	float: left;
+	width: 38px;
+	color: #474747;
+	line-height: 40px;
+	font-size: 15px;
+}
+#sex{
+	float: left;
+	margin-left: 50px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #909090;
+}
+#sex span{
+	padding-left: 18px;
+	margin-right: 20px;
+	background: url(../img/radio1.png)left 14px no-repeat;
+	float: left;
+	cursor: pointer;
+	color: #474747;
+}
+#sex .radio{
+	background: url(../img/radio2.png)left 14px no-repeat;
+}
+.in1 .choos{
+	background: url(../img/input3.png) no-repeat;
+	width: 445px;
+	height: 40px;
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.choos select{
+	float: left;
+	height: 40px;
+	width: 355px;
+	color: #474747;
+	line-height: 14px;
+	padding: 0 8px;
+	
+}
+.choos select:hover{
+	cursor: pointer;
+}
+#choosspan{
+	float: left;
+	margin-left: -20px;
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/select_arrow.png)8px no-repeat;
+}
+
+.in1_choos2{
+	width: 100%;
+	height: 40px;
+	margin: 25px 0px 10px 0px;
+	position: relative;
+}
+.in1_choos2 .choos2_a{
+	background: url(../img/btn10.png)no-repeat;
+	background-size: 100% 100%;
+	width: 140px;
+	height: 40px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+.in1_choos2 .choos2_b{
+	background: url(../img/btn10.png)no-repeat;
+	background-size: 100% 100%;
+	width: 140px;
+	height: 40px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	left: 150px;
+}
+.in1_choos2 .choos2_c{
+	background: url(../img/btn10.png)no-repeat;
+	background-size: 100% 100%;
+	width: 140px;
+	height: 40px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	left: 300px;
+}
+.in1_choos2 .sapan2{
+	float: left;
+	width: 20px;
+	color: #474747;
+	line-height: 40px;
+	font-size: 15px;
+}
+.in1_choos2 select{
+	float: left;
+	height: 40px;
+	width: 90px;
+	color: #474747;
+	line-height: 14px;
+	padding: 0 8px;
+	
+}
+.in1_choos2 select:hover{
+	cursor: pointer;
+}
+.in1_choos2 input{
+	width: 408px;
+	height: 40px;
+	position: absolute;
+	right: 25px;
+	background: url(../img/input3.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0 20px;
+}
+.in1 .xiangqing{
+	width: 900px;
+	height: 40px;
+	float: left;
+	background: url(../img/input3.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0 20px;
+	margin-bottom: 15px;
+}
+.zhong3{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 170px;
+}
+.zhong3_box{
+	width: 1258px;
+	height: 170px;
+	margin: 0 auto;
+	position: relative;
+}
+.zhong3_box .btnok{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 50px;
+	
+}
+.btnok input{
+	background: url(../img/btn6.png)center center no-repeat;
+	width: 158px;
+	height: 40px;
+	font-size: 16px;
+	color: #9e7a4a;
+	text-align: center;
+	margin-left: 523px;
+	float: left;
+}
+.btnok input:hover{
+	cursor: pointer;
+}
+.btnok p{
+	line-height: 40px;
+	font-size: 14px;
+	color: #707070;
+	float: left;
+	margin-left: 22px;
+}
+.btnok p a{
+	color: #792120;
+	margin-left: 3px;
+	text-decoration: underline;
+}

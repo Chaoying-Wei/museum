@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>关于</title>
+         <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/关于.css">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script>
+			$(function(){
+				$('.block1 .left ul li').click(function(event) {
+					$(this).addClass('act');
+					$(this).siblings('li').removeClass('act');
+					console.log($(this).index());
+					var b=$(this).index();
+					$('.block1 .right #item').eq(b).addClass('dis');
+					$('.block1 .right #item').eq(b).siblings('#item').removeClass('dis');
+					$('.block1 .right #item').eq(b).siblings('#item').css('display', 'none');
+					$('.block1 .right #item').eq(b).css('display', 'block');
+				});
+				$('.me').click(function(){
+					$('.navbar').css('display','block')
+				});
+				$('.layer .close').click(function(){
+					$('.navbar').css('display','none')
+				});
+			})
+		</script>
+    </head>
+    <body>
+    	<div class="header">
+			<div class="wrap">
+				<div class="logo" style="background:none;">
+					<a href="../index.html">
+						<img src="../img/headerlogo02.png" alt="故宫博物院" style="margin-top: 8px;">
+					</a>
+				</div>
+				<div class="nav_main">
+				<ul>
+					<li>
+						<a href="../index.html">首页</a>
+						<b><img src="" width="18"></b>
+					</li>
+					<li>
+						<a href="导览.html">导览</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">开放时间</a></p>
+							<p><a href="">票务服务</a></p>
+							<p><a href="">交通路线</a></p>
+							<p><a href="">游览须知</a></p>
+							<p><a href="" target="_blank">全景故宫</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="展览.html">展览</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">近期展览</a></p>
+							<p><a href="">专馆</a></p>
+							<p><a href="">原状陈列</a></p>
+							<p><a href="">赴外展览</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="教育.html">教育</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">教育新闻</a></p>
+							<p><a href="">故宫博物院教育中心</a></p>
+							<p><a href="">国际博协培训中心</a></p>
+							<p><a href="">故宫志愿者</a></p>
+						</div>
+					</li>
+					<li> 
+						<a href="explore.html">探索</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">建筑</a></p>
+							<p><a href="">藏品</a></p>
+							<p><a href="">古籍</a></p>
+							<p><a href="">宫廷历史</a></p>
+							<p><a href="">文物医院</a></p>
+							<p><a href="">文化专题</a></p>
+							<p><a href="" >名画记</a></p>
+							<p><a href="" >数字多宝阁</a></p>
+							<p><a href="" >数字文物库</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="学术 (2).html">学术</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">学术活动</a></p>
+							<p><a href="">专家名录</a></p>
+							<p><a href="">故宫研究院</a></p>
+							<p><a href="">故宫学院</a></p>
+							<p><a href="">其他学术机构</a></p>
+							<p><a href="">故宫博物院院刊</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="文创.html">文创</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">故宫出版</a></p>
+							<p><a href="">文创产品</a></p>
+							<p><a href="">故宫壁纸</a></p>
+							<p><a href="">故宫APP</a></p>
+							<p><a href="" >故宫游戏</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="#">关于</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">总说</a></p>
+							<p><a href="">领导</a></p>
+							<p><a href="">资讯</a></p>
+							<p><a href="">院史编年</a></p>
+							<p><a href="">景仁榜</a></p>
+							<p><a href="">机构设置</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="tools">
+					<div class="d us login">
+						<span><img width="17" src="../img/ico_tools_search.png"></span>
+						<div class="loginbox">
+							<a class="a" href="login.html">登录</a>
+							<a class="a" href="register.html">注册</a>
+						</div>
+					</div>
+					<div class="d la lang">
+						<span><img src="../img/zhong1.png"></span>
+						<div class="language">
+							<a class="a" href="" target="_blank">EN</a>
+							<a class="a" href="" target="_blank">青少版</a>
+						</div>
+					</div>
+					<div class="d sc scbtn">
+						<span><img width="17" src="../img/ico_tools_user.png"></span>
+						<div class="search">
+							<input type="text" class="kw" value="搜索关键词..." onfocus="if(this.value='搜索关键词...'){this.value=''}" onblur="if(this.value==''){this.value='搜索关键词...'}">
+							<input type="button" class="ok">
+						</div>
+					</div>
+					<div class="d me">
+						<a href="javascript:;"><img src="../img/menu2-1.png"></a>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="popWindow navbar children">
+			<div class="layer">
+				<a href="javascript:;" class="close"></a>
+				<div class="list">
+					<div class="">
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>导览</h1></a>
+							<dl>
+								<dd>
+									<a href="">开放时间</a>
+								</dd>
+								<dd>
+									<a href="">票务服务</a>
+								</dd>
+								<dd>
+									<a href="">交通路线</a>
+								</dd>
+								<dd>
+									<a href="">游览须知</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">全景故宫</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>展览</h1></a>
+							<dl>
+								<dd>
+									<a href="">近期展览</a>
+								</dd>
+								<dd>
+									<a href="">专馆</a>
+								</dd>
+								<dd>
+									<a href="">原状陈列</a>
+								</dd>
+								<dd>
+									<a href="">赴外展览</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>教育</h1></a>
+							<dl>
+								<dd>
+									<a href="">教育新闻</a>
+								</dd>
+								<dd>
+									<a href="">故宫博物院教育中心</a>
+								</dd>
+								<dd>
+									<a href="">国际博协培训中心</a>
+								</dd>
+								<dd>
+									<a href="">故宫志愿者</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>探索</h1></a>
+							<dl>
+								<dd>
+									<a href="">建筑</a>
+								</dd>
+								<dd>
+									<a href="">藏品</a>
+								</dd>
+								<dd>
+									<a href="">古籍</a>
+								</dd>
+								<dd>
+									<a href="">宫廷历史</a>
+								</dd>
+								<dd>
+									<a href="">文物医院</a>
+								</dd>
+								<dd>
+									<a href="">文化专题</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">名画记</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">数字多宝阁</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">数字文物库</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>学术</h1></a>
+							<dl>
+								<dd>
+									<a href="">学术活动</a>
+								</dd>
+								<dd>
+									<a href="">专家名录</a>
+								</dd>
+								<dd>
+									<a href="">故宫研究院</a>
+								</dd>
+								<dd>
+									<a href="">故宫学院</a>
+								</dd>
+								<dd>
+									<a href="">其他学术机构</a>
+								</dd>
+								<dd>
+									<a href="">故宫博物院院刊</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>文创</h1></a>
+							<dl>
+								<dd>
+									<a href="">故宫出版</a>
+								</dd>
+								<dd>
+									<a href="">文创产品</a>
+								</dd>
+								<dd>
+									<a href="">故宫壁纸</a>
+								</dd>
+								<dd>
+									<a href="">故宫APP</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">故宫游戏</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>关于</h1></a>
+							<dl>
+								<dd>
+									<a href="">总说</a>
+								</dd>
+								<dd>
+									<a href="">领导</a>
+								</dd>
+								<dd>
+									<a href="">资讯</a>
+								</dd>
+								<dd>
+									<a href="">院史编年</a>
+								</dd>
+								<dd>
+									<a href="">景仁榜</a>
+								</dd>
+								<dd>
+									<a href="">机构设置</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="gy">
+	    <div class="body">
+	    	<div class="posotion">
+	    		<div class="wrap">
+	    			<a href="index.html">首页</a> »
+	    			<a href="#" id="bread-about">关于</a>
+	    		</div>
+	    	</div>
+	    	<div class="page-about">
+	    		<div class="wrap">
+	    			<div class="block1">
+	    				<div class="t_head">
+	    					<h1>
+	    						<span><img src="../img/g17.png" alt=""></span>
+	    						<span>故宫博物院总说</span>
+	    						<span><img src="../img/g18.png" alt=""></span>
+	    					</h1>
+	    					<p>故宫博物院，是一座特殊的博物馆。成立于1925年的故宫博物院，建立在明清两朝皇宫——紫禁城的基础上。历经五百年兴衰荣辱，帝王宫殿的大门终于向公众敞开。故宫博物院绝无仅有的独特藏品，是世界上规模最大、保存最完整的紫禁城木结构宫殿建筑群。</p>
+	    					<a href="" class="btn4 btn-new">更多总说内容<div class="lines-btn"><svg></svg></div></a>
+	    				</div>
+	    				<div class="box">
+	    					<div class="left">
+	    						<ul>
+	    							<li class="act">王旭东 <span> 院长</span></li>
+	    							<li>都海江 <span> 党委书记、副院长</span></li>
+	    							<li>李小城 <span> 常务副院长</span></li>
+	    							<li>娄  伟 <span> 副院长</span></li>
+	    							<li>任万平 <span> 副院长</span></li>
+	    							<li>朱红文 <span> 纪委书记</span></li>
+	    							<li>闫宏斌 <span> 副院长</span></li>
+	    							<li>赵国英 <span> 副院长</span></li>
+	    						</ul>
+	    					</div>
+	    					<div class="right">
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g19.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>王旭东</h1>
+	    										<h2>院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>王旭东，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院院长助理，党委副书记。2013年11月任敦煌研究院党委书记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究。1991年开始文物保护工作以来，主持完成全国重点文物保护单位保护维修工程60余项，承担国家及省部级课题近20项，主持或作为主要参与人完成与美国、</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g20.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>李小城</h1>
+	    										<h2>常务副院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>李小城，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院院长助理，保护研究所所长。2005年1月任敦煌研究院副院长。2011年5月任敦长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究。1991年开始文物保护工作以来，主持完成全国重点文物保护单化系统拔尖创新人才”“甘肃省五一劳动奖章”“文化部优秀专家”“甘肃省优秀专家”“甘肃省先进工作者”等多项荣誉称号，入选国家百千万人才工程和甘肃省领军人才工程。中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g21.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>娄伟</h1>
+	    										<h2>副院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>娄伟，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院院长助理，保护研究所所长。2005年1月任敦煌研究院副院长。2011年5月任敦煌研究院常务记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究《古代壁画规范研究》等专著6部，获国家或省部级科技奖励10多项，何梁何利奖科学与技术创新奖获得者，授权技术发明专利20余件，主持完成国家及行业技术标准5项，被授予“全国优秀科技工作者”“宣传文化系统中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g22.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>任万平</h1>
+	    										<h2>副院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>任万平，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦1月任敦煌研究院副院长。2011年5月任敦煌研究院常务副院长、党委副书记。2013年11月任敦煌研究院党委书记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究。1991年开始文物保护工作以来，主持完成全国重点文物保护单位保护维修工程60余项，承担国家及省部、英国、澳大利亚等国相关文化遗产号，入选国家百千万人才工程和甘肃省领军人才工程。中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g23.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>朱红文</h1>
+	    										<h2>纪委书记</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>朱红文，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院院长年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究。1991年开始文物保护工作以来，主持完成全国重点文物保护单位保护维十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g24.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>闫宏斌</h1>
+	    										<h2>副院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>闫宏斌，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院务副院长、党委副书记。2013年11月任敦煌研究院党委书记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研化系统拔尖创新人才”“甘肃省五一劳动奖章”“文化部优秀专家”“甘肃省优秀专家”“甘肃省先进工作者”等多项荣誉称号，入选国家百千万人才工程和甘肃省领军人才工程。中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g25.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>赵国英</h1>
+	    										<h2>副院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>赵国英，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院院记。2013年11月任敦煌研究院党委书记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的研究。1991年开始文物保护工作以来，主持完成全国重点文物保护单位保护维修工程60余项，承担国家及省部级课题近20项，主持或作为才工程和甘肃省领军人才工程。中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    						<div id="item">
+	    							<a href="">
+	    								<div class="photo">
+	    									<div class="img"><img src="../img/g26.jpg" alt=""></div>
+	    									<div class="title">
+	    										<h1>王旭东</h1>
+	    										<h2>院长</h2>
+	    									</div>
+	    								</div>
+	    								<div class="cont">
+	    									<p>王旭东，男，汉族，1967年2月出生，甘肃山丹人，2003年4月加入中国共产党，1990年8月参加工作。2002年毕业于兰州大学资源与环境学院地质工程专业，研究生学历，工学博士，研究馆员。</p><p></p>
+	    									<p></p>
+	    									<p>1991年6月到敦煌研究院工作，历任敦煌研究院保护研究所副所长，敦煌研究院、党委副书记。2013年11月任敦煌研究院党委书记、常务副院长。2014年12月任敦煌研究院院长、党委书记。2019年4月至今任文化和旅游部党组成员、故宫博物院院长（副部长级）。</p><p></p>
+	    									<p></p>
+	    									<p>主要从事石窟、古代壁画和土遗址保护，文化遗产监测预警与预防性保护等方面的60余项，承担国家及省部级课题近20项，主持或作为主要系统拔尖创新人才”“甘肃省五一劳动奖章”“文化部优秀专家”“甘肃省优秀专家”“甘肃省先进工作者”等多项荣誉称号，入选国家百千万人才工程和甘肃省领军人才工程。中共第十九届中央委员会候补委员。</p>
+	    								</div>
+	    							</a>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="block2">
+	    				<div class="t_head">
+	    					<div>
+	    						<h1 class="title2">
+	    							<span class="tit-span"><img src="../img/g17.png" alt=""></span>
+	    							<span>院史编年</span>
+	    							<span class="tit-span"><img src="../img/g18.png" alt=""></span>
+	    						</h1>
+	    					</div>
+	    				</div>
+	    				<script>
+	    					$(function(){
+	    						var num=0;
+	    						$('#left').click(function(event) {
+										num--;
+					        				if(num<0){
+					        					num=7;
+					        					$('#uls').css('margin-left',-200*num+'px');
+					        					num=0;
+					        				}
+					        				$('#uls').animate({
+					        					'margin-left':-200*num+'px'
+					        				}, 300)
+					        		});
+									$('#right').click(function(event) {
+										num++; 
+					        				if(num>7){
+					        					num=0;
+					        					$('#uls').css('margin-left',-200*num+'px');
+					        					num=1;	
+					        				}
+					        				$('#uls').animate({
+					        					'margin-left':-200*num+'px'
+					        				}, 300)
+									});
+	    					})
+	    				</script>
+	    				<div class="scroll-tab">
+	    					<div class="scroll">
+	    					    <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 956px; height: 38px; margin: 0px; overflow: hidden;">
+		    					    <ul id="uls">
+		    							<li class="act">历年博物活动</li>
+		    							<li>历年贵宾接待</li>
+		    							<li>历年学术活动</li>
+		    							<li>历年重要展览</li>
+		    							<li>历年文物入藏</li>
+		    							<li>历年古建工程</li>
+		    							<li>历年其他事件</li>
+		    						</ul>
+		    						<span id="left" class="prev"></span>
+		    						<span id="right" class="next"></span>
+	    					    	
+	    					    </div>	
+	    					</div>
+	    				</div>
+	    					<div class="scroll-cont">
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    						    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    				<div class="ul">
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十五讲讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    					</ul>
+	    					<ul>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫开启VR节目观影周，将与惠普合作“V故宫”巡展</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">“故宫讲坛”第一百四十六讲座信息</a></h3></li>
+	    						<li><span>2018-12-28</span><h3><a href="">““故宫博物院联合网易出品手机游戏《绘真·妙笔千山》</a></h3></li>
+	    					</ul>
+	    				</div>
+	    			 </div>
+	    			</div>
+	    			<div class="align">
+	    				<a href="">更多院史编年内容</a>
+	    			</div>
+	    		</div>
+	    		<div class="spl_line"></div>
+	    		<div class="block3">
+	    			<div class="t_head">
+	    				<h1>
+	    				<span class="tit-span"><img src="../img/g17.png" alt=""></span>
+	    				<span>机构设置</span>
+	    				<span class="tit-span"><img src="../img/g18.png" alt=""></span>
+	    				</h1>
+	    				<h2></h2>
+	    				<div class="block1">
+	    					<div class="list">
+	    						<dl>
+	    							<img src="../img/g30.jpg" alt="">
+	    							<dd>
+	    								<a href="" class="middle"><span>院办公</span></a>
+	    								<a href="" class="middle"><span>人事处</span></a>
+	    								<a href="" class="middle"><span>财务处</span></a>
+	    								<a href="" class="middle"><span>事外处</span></a>
+	    								<a href="" class="middle"><span>法律处</span></a>
+	    								<a href="" class="middle"><span>经营管</span></a>
+	    								<a href="" class="middle"><span>审计室</span></a>
+	    								<a href="" class="middle"><span>预算处</span></a>
+	    							</dd>
+	    						</dl>
+	    						<dl>
+	    							<img src="../img/g31.jpg" alt="">
+	    							<dd>
+	    								<a href="" class="middle"><span>院办公</span></a>
+	    								<a href="" class="middle"><span>人事处</span></a>
+	    								<a href="" class="middle"><span>财务处</span></a>
+	    								<a href="" class="middle"><span>事外处</span></a>
+	    								<a href="" class="middle"><span>法律处</span></a>
+	    								<a href="" class="middle"><span>经营管</span></a>
+	    								<a href="" class="middle"><span>审计室</span></a>
+	    								<a href="" class="middle"><span>预算处</span></a>
+	    							</dd>
+	    						</dl>
+	    						<dl>
+	    							<img src="../img/g32.jpg" alt="">
+	    							<dd>
+	    								<a href="" class="middle"><span>院办公</span></a>
+	    								<a href="" class="middle"><span>人事处</span></a>
+	    								<a href="" class="middle"><span>财务处</span></a>
+	    								<a href="" class="middle"><span>事外处</span></a>
+	    								<a href="" class="middle"><span>法律处</span></a>
+	    								<a href="" class="middle"><span>经营管</span></a>
+	    								<a href="" class="middle"><span>审计室</span></a>
+	    								<a href="" class="middle"><span>预算处</span></a>
+	    							</dd>
+	    						</dl>
+	    						<dl>
+	    							<img src="../img/g33.jpg" alt="">
+	    							<dd>
+	    								<a href="" class="middle"><span>院办公</span></a>
+	    								<a href="" class="middle"><span>人事处</span></a>
+	    								<a href="" class="middle"><span>财务处</span></a>
+	    								<a href="" class="middle"><span>事外处</span></a>
+	    								<a href="" class="middle"><span>法律处</span></a>
+	    								<a href="" class="middle"><span>经营管</span></a>
+	    								<a href="" class="middle"><span>审计室</span></a>
+	    								<a href="" class="middle"><span>预算处</span></a>
+	    							</dd>
+	    						</dl>
+	    						<dl>
+	    							<img src="../img/g34.jpg" alt="">
+	    							<dd>
+	    								<a href="" class="middle"><span>院办公</span></a>
+	    								<a href="" class="middle"><span>人事处</span></a>
+	    								<a href="" class="middle"><span>财务处</span></a>
+	    								<a href="" class="middle"><span>事外处</span></a>
+	    								<a href="" class="middle"><span>法律处</span></a>
+	    								<a href="" class="middle"><span>经营管</span></a>
+	    								<a href="" class="middle"><span>审计室</span></a>
+	    								<a href="" class="middle"><span>预算处</span></a>
+	    							</dd>
+	    						</dl>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		      <script>
+				          $(function(){
+				            var cur=0;
+				            var auto=null;
+				            var $btn=$(".block4 .nav i");
+				            var $li=$(".block4 .frame1 li");
+				            $li.eq(0).fadeIn();
+				            function lunbo(){
+				                $btn.eq(cur).addClass("sel").siblings().removeClass("sel");
+				                $li.eq(cur).fadeIn(2000).siblings().hide();
+				                
+				                cur++;
+				                cur=cur>=$btn.length?0:cur;
+				                auto=setTimeout(lunbo,4000);
+				            }
+				            lunbo();
+				            $btn.hover(function(){
+				                clearTimeout(auto);
+				                var index=$(this).index();
+				                $(this).addClass("sel").siblings().removeClass("sel");
+				                $li.eq(index).fadeIn(2000).siblings().hide();
+				            },function(){
+				                var index=$(this).index()+1;
+				                cur=index;
+				                auto=setTimeout(lunbo,4000);
+				            })
+				         })
+				      </script>
+	    		<div class="block4">
+	    			<div class="t_head">
+	    				<div>
+	    				<h1 class="title2">
+	    					<span class="tit-span"><img src="../img/g17.png" alt=""></span>
+	    					<span>故宫资讯</span>
+	    					<span class="tit-span"><img src="../img/g18.png" alt=""></span>
+	    				</h1>
+	    				</div>
+	    			</div>
+	    			<div class="box">
+	    				<div class="left">
+	    					<div class="frame1">
+	    						<ul>
+	    							<li><img src="../img/g27.jpg" alt=""></li>
+	    							<li><img src="../img/g28.jpg" alt=""></li>
+	    							<li><img src="../img/g29.jpg" alt=""></li>
+	    						</ul>
+	    					</div>
+	    					<div class="nav">
+	    						<i></i>
+	    						<i></i>
+	    						<i></i>
+	    					</div>
+	    				</div>
+	    				<div>
+	    				<ul class="right">
+	    					<li><h3><span><i>16</i> / 09</span><a href="">仿宫廷紫砂器监制项目亮相故宫博物院</a></h3></li>
+	    					<li><h3><span><i>16</i> / 09</span><a href="">仿宫廷紫砂器监制项目亮相故宫博物院</a></h3></li>
+	    					<li><h3><span><i>16</i> / 09</span><a href="">仿宫廷紫砂器监制项目亮相故宫博物院</a></h3></li>
+	    					<li><h3><span><i>16</i> / 09</span><a href="">仿宫廷紫砂器监制项目亮相故宫博物院</a></h3></li>
+	    				</ul>
+	    				</div>
+	    			</div>
+	    			<div class="align">
+	    				<a href="">更多资讯</a>
+	    			</div>
+	    		</div>
+	    		<div class="spl_line1"></div>
+	    		<div class="block5">
+	    			<img src="../img/g36.jpg" alt="">
+	    			<div class="t_head jjl_xg">
+	    				<h1>
+	    				<span class="tit-span"><img src="../img/g17.png" alt=""></span>
+	    				<span>景仁榜</span>
+	    				<span class="tit-span"><img src="../img/g18.png" alt=""></span>
+	    				</h1>
+	    				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;故宫博物院成长以来的点点滴滴，既离不开建院以来几代故宫人的辛勤努力，也离不开社会各界人士的关心和支持。老一辈的故宫先贤们以毕生的精力推进了故宫学的不断深入研究，大大地提高了故宫博物院的科研学术水平。许多爱国的社会人士，将珍藏的宝贵文物捐献给故宫博物院，或奉献钱物来帮助故宫博物院进行古建筑的修缮和文物保护。</p>
+	    				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在紫禁城内东路的景仁宫，故宫博物院将其辟为了专门陈列捐献文物的展馆，取景仁宫“景仰仁德”之意设立“景仁榜”，以此来表达我们对于这些爱国人士的感激之情。</p>
+	    				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里，我们借“景仁榜”之名，缅怀诸位故宫先贤，也铭记诸位捐赠贵宾。</p>
+	    				<a href="" class="link btn-new">更多</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	  </div>
+	  <div class="footer" id="footer">
+	<div class="wrap">
+		<div class="num" >
+			网站访问量
+			<span class="inner">
+				<i>1</i>
+				<i>2</i>
+				<i>3</i>
+				<i>4</i>
+				<i>5</i>
+				<i>6</i>
+				<i>7</i>
+				<i>8</i>
+				<i>9</i>
+			</span>
+		</div>
+		<div>
+			<div class="code2d">
+				<a></a><img src="../img/erweima.jpg"></div>
+		</div>
+		<div>
+			<div class="nav_foot">
+				<a href=""> 网站地图</a>&nbsp;&nbsp;
+				<a href=""> 相关链接</a>&nbsp;&nbsp;
+				<a href="" target="_blank"> 影像授权</a>&nbsp;&nbsp;
+				<a href="" target="_blank"> 隐私政策</a>&nbsp;&nbsp;
+				<a href="" target="_blank"> 版权声明</a>&nbsp;&nbsp;
+				<a href=""> 常见问题</a>&nbsp;&nbsp;
+				<a href=""> 联系我们</a>&nbsp;&nbsp;
+				<a href="" target="_blank"> 关于我们</a>&nbsp;&nbsp;</div>
+		</div>
+		<div>
+			<div class="copyright">
+
+				© 2001- 现在 故宫博物院 &nbsp;&nbsp;　京ICP备05067311号-1 &nbsp;&nbsp;&nbsp;
+				<a href="" target="_blank">网站建设</a>：
+				<a href="" target="_blank">北京分形科技</a>
+			</div>
+
+			<div class="btns">
+				<a href="javascript:;">浏览建议</a>
+			</div>
+		</div>
+	   </div>
+     </div>
+    </body>
+</html>

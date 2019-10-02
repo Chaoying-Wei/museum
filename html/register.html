@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/header.css">
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.me').click(function(){
+					$('.navbar').css('display','block')
+				});
+				$('.layer .close').click(function(){
+					$('.navbar').css('display','none')
+				});
+				$('#sex span').click(function(){
+					$(this).toggleClass('radio');
+					$(this).siblings().toggleClass('radio')
+				});
+				
+				$('#name').click(function(){
+					this.value=" ";
+					
+				});
+				$('#pawss1').click(function(){
+					this.value=" ";
+				});
+				$('#pawss2').click(function(){ 
+					this.value=" ";
+				});
+				$('#phone').click(function(){
+					this.value=" ";
+				});
+				$('#email1').click(function(){
+					this.value=" ";
+				});
+				$('#email2').click(function(){
+					this.value=" ";
+				});
+				$('#yanzhen').click(function(){
+					this.value=" ";
+				});
+				$('#textarea1').click(function(){
+					this.value=" ";
+				});
+				$('#rename').click(function(){
+					this.value=" ";
+				});
+				$('#reminzu').click(function(){
+					this.value=" ";
+				});
+				$('#youbian').click(function(){
+					this.value=" ";
+				});
+				$('#xiangqing').click(function(){
+					this.value=" ";
+				});
+				$('#rephone').click(function(){
+					this.value=" ";
+				});
+				
+			})
+		</script>
+	</head>
+	<body> 
+		<!--头部导航条的开始-->
+		<div class="header">
+			<div class="wrap">
+				<div class="logo" style="background:none;">
+					<a href="../index.html">
+						<img src="../img/headerlogo02.png" alt="故宫博物院" style="margin-top: 8px;">
+					</a>
+				</div>
+				<div class="nav_main">
+				<ul>
+					<li>
+						<a href="../index.html">首页</a>
+						<b><img src="" width="18"></b>
+					</li>
+					<li>
+						<a href="导览.html">导览</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">开放时间</a></p>
+							<p><a href="">票务服务</a></p>
+							<p><a href="">交通路线</a></p>
+							<p><a href="">游览须知</a></p>
+							<p><a href="" target="_blank">全景故宫</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="展览.html">展览</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">近期展览</a></p>
+							<p><a href="">专馆</a></p>
+							<p><a href="">原状陈列</a></p>
+							<p><a href="">赴外展览</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="教育.html">教育</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">教育新闻</a></p>
+							<p><a href="">故宫博物院教育中心</a></p>
+							<p><a href="">国际博协培训中心</a></p>
+							<p><a href="">故宫志愿者</a></p>
+						</div>
+					</li>
+					<li> 
+						<a href="explore.html">探索</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">建筑</a></p>
+							<p><a href="">藏品</a></p>
+							<p><a href="">古籍</a></p>
+							<p><a href="">宫廷历史</a></p>
+							<p><a href="">文物医院</a></p>
+							<p><a href="">文化专题</a></p>
+							<p><a href="" >名画记</a></p>
+							<p><a href="" >数字多宝阁</a></p>
+							<p><a href="" >数字文物库</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="学术 (2).html">学术</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">学术活动</a></p>
+							<p><a href="">专家名录</a></p>
+							<p><a href="">故宫研究院</a></p>
+							<p><a href="">故宫学院</a></p>
+							<p><a href="">其他学术机构</a></p>
+							<p><a href="">故宫博物院院刊</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="文创.html">文创</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">故宫出版</a></p>
+							<p><a href="">文创产品</a></p>
+							<p><a href="">故宫壁纸</a></p>
+							<p><a href="">故宫APP</a></p>
+							<p><a href="" >故宫游戏</a></p>
+						</div>
+					</li>
+					<li>
+						<a href="关于.html">关于</a>
+						<b><img src="../img/arrow1.png" width="18"></b>
+						<div class="wcy_a">
+							<p><a href="">总说</a></p>
+							<p><a href="">领导</a></p>
+							<p><a href="">资讯</a></p>
+							<p><a href="">院史编年</a></p>
+							<p><a href="">景仁榜</a></p>
+							<p><a href="">机构设置</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="tools">
+					<div class="d us login">
+						<span><img width="17" src="../img/ico_tools_search.png"></span>
+						<div class="loginbox">
+							<a class="a" href="login.html">登录</a>
+							<a class="a" href="register.html">注册</a>
+						</div>
+					</div>
+					<div class="d la lang">
+						<span><img src="../img/zhong1.png"></span>
+						<div class="language">
+							<a class="a" href="" target="_blank">EN</a>
+							<a class="a" href="" target="_blank">青少版</a>
+						</div>
+					</div>
+					<div class="d sc scbtn">
+						<span><img width="17" src="../img/ico_tools_user.png"></span>
+						<div class="search">
+							<input type="text" class="kw" value="搜索关键词..." onfocus="if(this.value='搜索关键词...'){this.value=''}" onblur="if(this.value==''){this.value='搜索关键词...'}">
+							<input type="button" class="ok">
+						</div>
+					</div>
+					<div class="d me">
+						<a href="javascript:;"><img src="../img/menu2-1.png"></a>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="popWindow navbar children">
+			<div class="layer">
+				<a href="javascript:;" class="close"></a>
+				<div class="list">
+					<div class="">
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>导览</h1></a>
+							<dl>
+								<dd>
+									<a href="">开放时间</a>
+								</dd>
+								<dd>
+									<a href="">票务服务</a>
+								</dd>
+								<dd>
+									<a href="">交通路线</a>
+								</dd>
+								<dd>
+									<a href="">游览须知</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">全景故宫</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>展览</h1></a>
+							<dl>
+								<dd>
+									<a href="">近期展览</a>
+								</dd>
+								<dd>
+									<a href="">专馆</a>
+								</dd>
+								<dd>
+									<a href="">原状陈列</a>
+								</dd>
+								<dd>
+									<a href="">赴外展览</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>教育</h1></a>
+							<dl>
+								<dd>
+									<a href="">教育新闻</a>
+								</dd>
+								<dd>
+									<a href="">故宫博物院教育中心</a>
+								</dd>
+								<dd>
+									<a href="">国际博协培训中心</a>
+								</dd>
+								<dd>
+									<a href="">故宫志愿者</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>探索</h1></a>
+							<dl>
+								<dd>
+									<a href="">建筑</a>
+								</dd>
+								<dd>
+									<a href="">藏品</a>
+								</dd>
+								<dd>
+									<a href="">古籍</a>
+								</dd>
+								<dd>
+									<a href="">宫廷历史</a>
+								</dd>
+								<dd>
+									<a href="">文物医院</a>
+								</dd>
+								<dd>
+									<a href="">文化专题</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">名画记</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">数字多宝阁</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">数字文物库</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>学术</h1></a>
+							<dl>
+								<dd>
+									<a href="">学术活动</a>
+								</dd>
+								<dd>
+									<a href="">专家名录</a>
+								</dd>
+								<dd>
+									<a href="">故宫研究院</a>
+								</dd>
+								<dd>
+									<a href="">故宫学院</a>
+								</dd>
+								<dd>
+									<a href="">其他学术机构</a>
+								</dd>
+								<dd>
+									<a href="">故宫博物院院刊</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>文创</h1></a>
+							<dl>
+								<dd>
+									<a href="">故宫出版</a>
+								</dd>
+								<dd>
+									<a href="">文创产品</a>
+								</dd>
+								<dd>
+									<a href="">故宫壁纸</a>
+								</dd>
+								<dd>
+									<a href="">故宫APP</a>
+								</dd>
+								<dd>
+									<a href="" target="_blank">故宫游戏</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="item">
+							<a href="" style="color:#fff;">
+								<h1>关于</h1></a>
+							<dl>
+								<dd>
+									<a href="">总说</a>
+								</dd>
+								<dd>
+									<a href="">领导</a>
+								</dd>
+								<dd>
+									<a href="">资讯</a>
+								</dd>
+								<dd>
+									<a href="">院史编年</a>
+								</dd>
+								<dd>
+									<a href="">景仁榜</a>
+								</dd>
+								<dd>
+									<a href="">机构设置</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="position">
+				<div class="aa">
+					<p><a href="index.html">首页</a></p>
+					<p>>></p>
+					<p><a href="#">注册</a></p>
+				</div>
+			</div>
+			<div class="zhong1">
+				<div class="zhong1_box">
+					<h1>【成为故宫会员，感受故宫的庄严与肃静】</h1>
+					<div class="boxp">
+						<p>欢迎您来到“我的博物馆”，在这里注册之后即可成为故宫博物院的网络会员，享受故宫网站为您提供的一系列服务，包括：</p>
+						<p>（一）在故宫网站建立“我的博物馆”，定制自己喜爱的版块、栏目和内容，搭建完全属于自己的个性博物馆网站；</p>
+						<p>（二）订阅免费的故宫博物院电子报，了解院内最新展览消息和其他资讯；</p>
+						<p>（三）参与故宫网站的在线调查，让故宫博物院为您提供更好的服务；</p>
+						<p>您所填的个人材料受到故宫博物院网站的保护。（阅读《故宫博物院使用条款》）</p>
+					</div>
+				</div>
+			</div>
+			<div class="zhong2">
+				<div class="zhong2_box">
+					<h1>【基本信息】</h1>
+					<div class="box_input">
+						<div class="in1">
+							<input type="text" name="login" id="name" placeholder="用户名" />
+							<p><b>*</b>用户名可包含大写、小写英文字母，数字，中文，长度为2至10位</p>
+						</div>
+						<div class="in1">
+							<input type="text" name="pawss1" id="pawss1" placeholder="密码" />
+							<p><b>*</b>密码可包含大写、小写英文字母，数字，长度为6至16位</p>
+						</div>
+						<div class="in1">
+							<input type="text" name="pawss2" id="pawss2" placeholder="确认密码" />
+							<p><b>*</b></p>
+							
+						</div>
+						<textarea name="textarea1" rows="" cols="" id="textarea1" placeholder="自我介绍"></textarea>
+						<div class="in1">
+							<input type="text" name="phone" id="phone" placeholder="手机号码" />
+							<p><b>*</b></p>
+						</div>
+						<div class="in1">
+							<input type="text" name="email1" id="email1" placeholder="邮箱地址" />
+							<p><b>*</b></p>
+							<input type="text" name="yanzhen" id="yanzhen" placeholder="验证码" class="yanzinput" />
+							<img src="../img/yanzhen2.JPG"/>
+							<p style="float: right;"><b>*</b></p>
+						</div>
+						<div class="in1">
+							<input type="text" name="email2" id="email2" placeholder="确认邮箱地址" />
+							<p><b>*</b></p>
+						</div>
+						<div class="input_bottom">
+							<input type="checkbox"  checked="true"/>订阅免费的故宫博物电子报&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="checkbox"  checked="true"/><b>*</b>同意《故宫博物院网站隐私政策》（若不同意，将不能注册）
+							<br />
+							<input type="checkbox"  checked="true"/><b>*</b>同意《故宫博物院网站会员注册协议》（若不同意，将不能注册）
+						</div>
+					</div> 
+					
+				</div>
+			</div>
+			<div class="zhong2" style="height: 450px;">
+				<div class="zhong2_box" style="height: 432px;">
+					<h1>【用户真实信息】</h1>
+					<div class="box_input" style="height: 360px;">
+						<div class="in1">
+							<input type="text" name="rename" id="rename" placeholder="姓名" />
+							<p><b>*</b></p>
+							<span class="sapan1">性别</span>
+							<p id="sex">
+								<span class="radio">男</span>
+								<span >女</span>
+							</p>
+						</div>
+						<div class="in1">
+							<input type="text" name="reminzu" id="reminzu" placeholder="名族" />
+							<p><b>*</b></p>
+							<div class="choos">
+								<span class="sapan1">国籍</span>
+								<select name="" id="" onchange="fn(this)">
+									<option value="中国"selected="中国">中国</option>
+									<option value="阿尔巴尼亚共和国">阿尔巴尼亚共和国</option>
+									<option value="阿尔及利亚民主人民共和国" >阿尔及利亚民主人民共和国</option>
+									<option value="阿富汗">阿富汗</option>
+									<option value="阿根廷共和国">阿根廷共和国</option>
+									
+								</select>
+								<span id="choosspan"></span>
+							</div>
+							<p style="float: right;"><b>*</b></p>
+						</div>
+						<div class="in1_choos2">
+							<div class="choos2_a">
+								<span class="sapan2">省</span>
+								<select name="" id="" onchange="fn(this)">
+									<option value="北京"selected="北京">北京</option>
+									<option value="天津">天津</option>
+									<option value="河北省" >河北省</option>
+									<option value="山西省">山西省</option>
+									<option value="内蒙古">内蒙古</option>
+									
+								</select>
+								<span id="choosspan"></span>
+							</div>
+							<div class="choos2_b">
+								<span class="sapan2">市</span>
+								<select name="" id="" onchange="fn(this)">
+									<option value="北京"selected="北京市">北京市</option>
+									
+								</select>
+								<span id="choosspan"></span>
+							</div>
+							<div class="choos2_c">
+								<span class="sapan2">县</span>
+								<select name="" id="" onchange="fn(this)">
+									<option value="东城区"selected="东城区">东城区</option>
+									<option value="西城区">西城区</option>
+									<option value="崇文区" >崇文区</option>
+									<option value="武宣区">武宣区</option>
+									<option value="内蒙古">朝阳区</option>
+									
+								</select>
+								<span id="choosspan"></span>
+							</div>
+							<p style="position: absolute;left: 455px;top: 10px;"><b>*</b></p>
+							<input type="text" name="youbian" id="youbian" placeholder="邮编" />
+							<p style="position: absolute;right: 0px;top: 10px;"><b>*</b></p>
+						</div>
+						<div class="in1">
+							<input type="text" name="xiangqing" id="xiangqing" placeholder="详情地址" class="xiangqing"/>
+							<p style="float: right;"><b>*</b></p>
+						</div>
+						<div class="in1">
+							<input type="text" name="rephone" id="rephone" placeholder="联系电话" style="width: 441px;"/>
+							<p><b style="margin-left: 10px;">*</b></p>
+							<input type="date" name="redate" id="redate" placeholder="出身日期" style="width: 441px;"/>
+							<p><b style="margin-left: 20px;">*</b></p>
+						</div>
+					
+						<div class="in1">
+							<div class="choos">
+								<span class="sapan1">学历</span>
+								<select name="" id="" onchange="fn(this)">
+									<option value="高中以下学历"selected="高中以下学历">高中以下学历</option>
+									<option value="中专、高中">中专、高中</option>
+									<option value="专科" >专科</option>
+									<option value="本科">本科</option>
+									<option value="硕士研究生">硕士研究生</option>
+									
+								</select>
+								<span id="choosspan"></span>
+							</div>
+							<p style="margin-left: 10px;"><b>*</b></p>
+						</div>
+					</div> 
+					
+				</div>
+			</div>
+			<div class="zhong3">
+				<div class="zhong3_box">
+					<div class="btnok">
+						<input type="submit" name="" id="" value="完成注册" />
+						<p>"已注册？"<a href="login.html">请登录</a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="footer" id="footer">
+			<div class="wrap">
+				<div class="num">
+					网站访问量
+					<span class="inner">
+						<i>1</i>
+						<i>2</i>
+						<i>3</i>
+						<i>4</i>
+						<i>5</i>
+						<i>6</i>
+						<i>7</i>
+						<i>8</i>
+						<i>9</i>
+					</span>
+				</div>
+				<div>
+					<div class="code2d">
+						<a></a><img src="../img/erweima.jpg"></div>
+				</div>
+				<div>
+					<div class="nav_foot">
+						<a href=""> 网站地图</a>&nbsp;&nbsp;
+						<a href=""> 相关链接</a>&nbsp;&nbsp;
+						<a href="" target="_blank"> 影像授权</a>&nbsp;&nbsp;
+						<a href="" target="_blank"> 隐私政策</a>&nbsp;&nbsp;
+						<a href="" target="_blank"> 版权声明</a>&nbsp;&nbsp;
+						<a href=""> 常见问题</a>&nbsp;&nbsp;
+						<a href=""> 联系我们</a>&nbsp;&nbsp;
+						<a href="" target="_blank"> 关于我们</a>&nbsp;&nbsp;</div>
+				</div>
+				<div>
+					<div class="copyright">
+		
+						© 2001- 现在 故宫博物院 &nbsp;&nbsp;　京ICP备05067311号-1 &nbsp;&nbsp;&nbsp;
+						<a href="" target="_blank">网站建设</a>：
+						<a href="" target="_blank">北京分形科技</a>
+					</div>
+		
+					<div class="btns">
+						<a href="javascript:;">浏览建议</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

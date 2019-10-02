@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.aa{
+	width: 1258px;
+	height: 70px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.aa p{
+	margin-top: 15px;
+	display: inline-block;
+}
+.login{
+	background: url(../img/login.jpg) center top no-repeat;
+	height: 645px;
+	margin: 20px 0 45px;
+	position: relative;
+}
+.box{
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	margin-left: -240px;
+	width: 490px;
+	height: 330px;
+}
+.box h1{
+	color: white;
+	font-size: 1.8em;
+	text-align: center;
+	height: 40px;
+}
+.box .left{
+	width: 25px;
+	float: left;
+}
+.box .right{
+	width: 25px;
+	float: right;
+}
+.box .input{
+	background: url(../img/input1.png) left center no-repeat;
+	width: 385px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.box .input input{
+	width: 345px;
+	color: white;
+	margin-left: 20px;
+	font-size: 14px;
+	height: 40px;
+}
+.box .yzinput{
+	background: url(../img/input2.png) left center no-repeat;
+	
+	width: 385px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.box .yzinput input{
+	width: 180px;
+	color: white;
+	margin-left: 20px;
+	font-size: 14px;
+	height: 40px;
+	float: left;
+}
+.box .yzinput img:hover{
+	cursor: pointer;
+}
+.box .yzinput img{
+	width: 90px;
+	height: 40px;
+	float: right;
+	right: 0px;
+}
+.box .btn{
+	width: 400px;
+	height: 40px;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+.box .btn input{
+	color: white;
+	width: 165px;
+	height: 40px;
+	background: url(../img/btn5.png) left center no-repeat;
+	float: left;
+}
+.box .btn input:hover{
+	cursor: pointer;
+}
+.box .btn span{
+	height: 40px;
+	color: white;
+	margin-left: 20px;
+	line-height:40px ;
+}

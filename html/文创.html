@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>文创</title>
+        <link rel="stylesheet" href="../css/文创.css">
+        <link rel="stylesheet" href="../css/header.css">
+       <script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.me').click(function(){
+                    $('.navbar').css('display','block')
+                });
+                $('.layer .close').click(function(){
+                    $('.navbar').css('display','none')
+                });
+                
+            })
+        </script>
+        
+    </head>
+        <!--头部导航条的开始-->
+        <div class="header">
+            <div class="wrap">
+                <div class="logo" style="background:none;">
+                    <a href="../index.html">
+                        <img src="../img/headerlogo02.png" alt="故宫博物院" style="margin-top: 8px;">
+                    </a>
+                </div>
+                <div class="nav_main">
+                <ul>
+                    <li>
+                        <a href="../index.html">首页</a>
+                        <b><img src="" width="18"></b>
+                    </li>
+                    <li>
+                        <a href="导览.html">导览</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">开放时间</a></p>
+                            <p><a href="">票务服务</a></p>
+                            <p><a href="">交通路线</a></p>
+                            <p><a href="">游览须知</a></p>
+                            <p><a href="" target="_blank">全景故宫</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="展览.html">展览</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">近期展览</a></p>
+                            <p><a href="">专馆</a></p>
+                            <p><a href="">原状陈列</a></p>
+                            <p><a href="">赴外展览</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="教育.html">教育</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">教育新闻</a></p>
+                            <p><a href="">故宫博物院教育中心</a></p>
+                            <p><a href="">国际博协培训中心</a></p>
+                            <p><a href="">故宫志愿者</a></p>
+                        </div>
+                    </li>
+                    <li> 
+                        <a href="explore.html">探索</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">建筑</a></p>
+                            <p><a href="">藏品</a></p>
+                            <p><a href="">古籍</a></p>
+                            <p><a href="">宫廷历史</a></p>
+                            <p><a href="">文物医院</a></p>
+                            <p><a href="">文化专题</a></p>
+                            <p><a href="" >名画记</a></p>
+                            <p><a href="" >数字多宝阁</a></p>
+                            <p><a href="" >数字文物库</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="学术 (2).html">学术</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">学术活动</a></p>
+                            <p><a href="">专家名录</a></p>
+                            <p><a href="">故宫研究院</a></p>
+                            <p><a href="">故宫学院</a></p>
+                            <p><a href="">其他学术机构</a></p>
+                            <p><a href="">故宫博物院院刊</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">文创</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">故宫出版</a></p>
+                            <p><a href="">文创产品</a></p>
+                            <p><a href="">故宫壁纸</a></p>
+                            <p><a href="">故宫APP</a></p>
+                            <p><a href="" >故宫游戏</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="关于.html">关于</a>
+                        <b><img src="../img/arrow1.png" width="18"></b>
+                        <div class="wcy_a">
+                            <p><a href="">总说</a></p>
+                            <p><a href="">领导</a></p>
+                            <p><a href="">资讯</a></p>
+                            <p><a href="">院史编年</a></p>
+                            <p><a href="">景仁榜</a></p>
+                            <p><a href="">机构设置</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="tools">
+                    <div class="d us login">
+                        <span><img width="17" src="../img/ico_tools_search.png"></span>
+                        <div class="loginbox">
+                            <a class="a" href="login.html">登录</a>
+                            <a class="a" href="register.html">注册</a>
+                        </div>
+                    </div>
+                    <div class="d la lang">
+                        <span><img src="../img/zhong1.png"></span>
+                        <div class="language">
+                            <a class="a" href="" target="_blank">EN</a>
+                            <a class="a" href="" target="_blank">青少版</a>
+                        </div>
+                    </div>
+                    <div class="d sc scbtn">
+                        <span><img width="17" src="../img/ico_tools_user.png"></span>
+                        <div class="search">
+                            <input type="text" class="kw" value="搜索关键词..." onfocus="if(this.value='搜索关键词...'){this.value=''}" onblur="if(this.value==''){this.value='搜索关键词...'}">
+                            <input type="button" class="ok">
+                        </div>
+                    </div>
+                    <div class="d me">
+                        <a href="javascript:;"><img src="../img/menu2-1.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="popWindow navbar children">
+            <div class="layer">
+                <a href="javascript:;" class="close"></a>
+                <div class="list">
+                    <div class="">
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>导览</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">开放时间</a>
+                                </dd>
+                                <dd>
+                                    <a href="">票务服务</a>
+                                </dd>
+                                <dd>
+                                    <a href="">交通路线</a>
+                                </dd>
+                                <dd>
+                                    <a href="">游览须知</a>
+                                </dd>
+                                <dd>
+                                    <a href="" target="_blank">全景故宫</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>展览</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">近期展览</a>
+                                </dd>
+                                <dd>
+                                    <a href="">专馆</a>
+                                </dd>
+                                <dd>
+                                    <a href="">原状陈列</a>
+                                </dd>
+                                <dd>
+                                    <a href="">赴外展览</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>教育</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">教育新闻</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫博物院教育中心</a>
+                                </dd>
+                                <dd>
+                                    <a href="">国际博协培训中心</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫志愿者</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>探索</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">建筑</a>
+                                </dd>
+                                <dd>
+                                    <a href="">藏品</a>
+                                </dd>
+                                <dd>
+                                    <a href="">古籍</a>
+                                </dd>
+                                <dd>
+                                    <a href="">宫廷历史</a>
+                                </dd>
+                                <dd>
+                                    <a href="">文物医院</a>
+                                </dd>
+                                <dd>
+                                    <a href="">文化专题</a>
+                                </dd>
+                                <dd>
+                                    <a href="" target="_blank">名画记</a>
+                                </dd>
+                                <dd>
+                                    <a href="" target="_blank">数字多宝阁</a>
+                                </dd>
+                                <dd>
+                                    <a href="" target="_blank">数字文物库</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>学术</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">学术活动</a>
+                                </dd>
+                                <dd>
+                                    <a href="">专家名录</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫研究院</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫学院</a>
+                                </dd>
+                                <dd>
+                                    <a href="">其他学术机构</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫博物院院刊</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>文创</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">故宫出版</a>
+                                </dd>
+                                <dd>
+                                    <a href="">文创产品</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫壁纸</a>
+                                </dd>
+                                <dd>
+                                    <a href="">故宫APP</a>
+                                </dd>
+                                <dd>
+                                    <a href="" target="_blank">故宫游戏</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <a href="" style="color:#fff;">
+                                <h1>关于</h1></a>
+                            <dl>
+                                <dd>
+                                    <a href="">总说</a>
+                                </dd>
+                                <dd>
+                                    <a href="">领导</a>
+                                </dd>
+                                <dd>
+                                    <a href="">资讯</a>
+                                </dd>
+                                <dd>
+                                    <a href="">院史编年</a>
+                                </dd>
+                                <dd>
+                                    <a href="">景仁榜</a>
+                                </dd>
+                                <dd>
+                                    <a href="">机构设置</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <script>
+          $(function(){
+            var cur=0;
+            var auto=null;
+            var $btn=$(".item1 .nav a");
+            var $li=$(".item1 .child");
+            $li.eq(0).fadeIn();
+            function lunbo(){
+                $btn.eq(cur).addClass("sel").siblings().removeClass("sel");
+                $li.eq(cur).fadeIn(2000).siblings().hide();
+                $('.item1 .nav').css('display','block');
+                $('.item1 .botton').css('display','block');
+                
+                cur++;
+                cur=cur>=$btn.length?0:cur;
+                auto=setTimeout(lunbo,4000);
+            }
+            lunbo();
+            $btn.hover(function(){
+                clearTimeout(auto);
+                var index=$(this).index();
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $li.eq(index).fadeIn(2000).siblings().hide();
+            },function(){
+                var index=$(this).index()+1;
+                cur=index;
+                auto=setTimeout(lunbo,4000);
+            })
+         })
+      </script>
+
+
+    <body>
+    <div class="li">
+    <div class="li2">
+        <div class="li3">
+            <img src="../img/h26.png" alt="">
+        </div>
+        <div class="box">
+            <div class="horn h1"></div>
+            <div class="box1">
+                <div id="periodical" class="item1">
+                    <div class="foucs">
+                        <div class="frame">
+                            <div class="child">
+                                <div class="img">
+                                    <img src="../img/h19.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="public-title">
+                                        <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                        <a href="">博物馆无形资产的保护与研究</a>
+                                        <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                    </div>
+                                    <div class="h2"></div>
+                                    <p>中国传统书画装裱修复技术，距今已有1700多年的历史。历史上遗留下来的珍贵书法、绘画等能幸存到今天，在很大程度是经过装裱的缘故。新中国成立后，国家文物局将全国书画装裱修复高手请到故宫博物院，专门负责装裱修复故宫收藏的书画文物，为故宫博物院和全国博物馆培养了一批传统装裱修复技术的专业人员。</p>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="img">
+                                    <img src="../img/h20.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="public-title">
+                                        <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                        <a href="">博物馆无形资产的保护与研究</a>
+                                        <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                    </div>
+                                    <div class="h2"></div>
+                                    <p>中国传统书画装裱修复技术，距今已有1700多年的历史。历史上遗留下来的珍贵书法、绘画等能幸存到今天，在很大程度是经过装裱的缘故。新中国成立后，国家文物局将全国书画装裱修复高手请到故宫博物院，专门负责装裱修复故宫收藏的书画文物，为故宫博物院和全国博物馆培养了一批传统装裱修复技术的专业人员。</p>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="img">
+                                    <img src="../img/h57.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="public-title">
+                                        <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                        <a href="">博物馆无形资产的保护与研究</a>
+                                        <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                    </div>
+                                    <div class="h2"></div>
+                                    <p>中国传统书画装裱修复技术，距今已有1700多年的历史。历史上遗留下来的珍贵书法、绘画等能幸存到今天，在很大程度是经过装裱的缘故。新中国成立后，国家文物局将全国书画装裱修复高手请到故宫博物院，专门负责装裱修复故宫收藏的书画文物，为故宫博物院和全国博物馆培养了一批传统装裱修复技术的专业人员。</p>
+                                </div>
+                            </div>
+                            <div class="nav">
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                            </div>
+                            <div class="botton">
+                                <a href="">更多故宫刊物</a>
+                                <a href="">故宫出版旗舰店</a>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+          $(function(){
+            var cur=0;
+            var auto=null;
+            var $btn=$(".item2 .nav1 a");
+            var $li=$(".item2 .child");
+            $li.eq(0).slideDown();
+            function lunbo(){
+                $btn.eq(cur).addClass("sel").siblings().removeClass("sel");
+                $li.eq(cur).slideDown(2000).siblings().hide();
+                $('.item2 .nav1').css('display','block');
+                $('.item2 .botton').css('display','block');
+                cur++;
+                cur=cur>=$btn.length?0:cur;
+                auto=setTimeout(lunbo,4000);
+            }
+            lunbo();
+            $btn.hover(function(){
+                clearTimeout(auto);
+                var index=$(this).index();
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $li.eq(index).slideDown(2000).siblings().hide();
+            },function(){
+                var index=$(this).index()+1;
+                cur=index;
+                auto=setTimeout(lunbo,4000);
+            })
+         })
+      </script>
+
+                <div id="protects" class="item2">
+                    <div class="fouce">
+                        <div class="frame">
+                            <div class="child">
+                                <div class="icon1">
+                                    <img src="../img/h18.png" alt="">
+                                </div>
+                                <div class="img1">
+                                    <img src="../img/h24.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="titlebox">
+                                        <div class="public-title">
+                                            <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                            <a href="">吉字茶具</a>
+                                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="h2">
+                                        <p>吉字茶具的设计参考故宫博物院藏甜白釉暗花缠枝莲托八吉祥纹碗。茶具糅合薄胎、彩绘等高难度制瓷手法，胎薄如玉，茶色外透。单杯以古彩画法绘制葫芦形“吉”字，盖碗及杯底则绘有缠枝莲纹，暖心的设计传递了“福在眼前”、“福禄双至”的美好祝福。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="icon1">
+                                    <img src="../img/h67 (2).png" alt="">
+                                </div>
+                                <div class="img1">
+                                    <img src="../img/h67 (1).png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="titlebox">
+                                        <div class="public-title">
+                                            <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                            <a href="">珐琅彩万花杯</a>
+                                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="h2">
+                                        <p>珐琅彩万花杯设计参考故宫博物院藏清乾隆玻璃胎画珐琅花鸟小瓶。杯子造型古雅胎色洁白，温润如玉，以珐琅彩工艺烧制花鸟图案，观之明媚动人。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="icon1">
+                                    <img src="../img/h12.png" alt="">
+                                </div>
+                                <div class="img1">
+                                    <img src="../img/h11.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="titlebox">
+                                        <div class="public-title">
+                                            <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                            <a href="">吉字茶具</a>
+                                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="h2">
+                                        <p>吉字茶具的设计参考故宫博物院藏甜白釉暗花缠枝莲托八吉祥纹碗。茶具糅合薄胎、彩绘等高难度制瓷手法，胎薄如玉，茶色外透。单杯以古彩画法绘制葫芦形“吉”字，盖碗及杯底则绘有缠枝莲纹，暖心的设计传递了“福在眼前”、“福禄双至”的美好祝福。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="child">
+                                <div class="icon1">
+                                    <img src="../img/h9.png" alt="">
+                                </div>
+                                <div class="img1">
+                                    <img src="../img/h8.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="titlebox">
+                                        <div class="public-title">
+                                            <span class="s1"><img src="../img/h42.png" alt=""></span>
+                                            <a href="">吉字茶具</a>
+                                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="h2">
+                                        <p>吉字茶具的设计参考故宫博物院藏甜白釉暗花缠枝莲托八吉祥纹碗。茶具糅合薄胎、彩绘等高难度制瓷手法，胎薄如玉，茶色外透。单杯以古彩画法绘制葫芦形“吉”字，盖碗及杯底则绘有缠枝莲纹，暖心的设计传递了“福在眼前”、“福禄双至”的美好祝福。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav1">
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                            </div>
+                            <div class="botton">
+                                <a href="">故宫博物院文创旗舰店</a>
+                                <a href="">故宫博物院文创馆</a><br>
+                                <a href="">故宫淘宝</a>
+                                <a href="">故宫文创旗舰店</a>
+                            </div>
+                            <div class="iocn"></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        $(window).scroll(function(event) {
+                            if($(window).scrollTop()>1500){
+                                $('.item3').addClass('now');
+                            }
+                        });
+                    })
+                </script>
+                <div class="item3">
+                    <div class="iocn3"></div>
+                    <div class="iocn4"></div>
+                    <div class="piclist">
+                        <div class="img i1"><img src="../img/h14.png" alt=""></div>
+                        <div class="img i2"><img src="../img/h15.png" alt=""></div>
+                        <div class="img i3"><img src="../img/h16.png" alt=""></div>
+                        <div class="img i4"><img src="../img/h17.png" alt=""></div>
+                    </div>
+                    <div class="text1">
+                        <div class="public-title">
+                            <span class="s1"><img src="../img/h42.png" alt=""></span>缤纷你的移动生活
+                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                        </div>
+                        <p>把故宫装进口袋</p>
+                        <div class="botton1">
+                            <a href="">更多故宫壁纸</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3-1">
+                    <div class="text">
+                        <div class="public-title">
+                            <span class="s1"><img src="../img/h42.png" alt=""></span>故宫输入法皮肤
+                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                        </div>
+                        <div class="h2">更多精彩皮肤、表情等你发现</div>
+                        <div class="botton">
+                            <a href="">更多故宫皮肤</a>
+                        </div>
+                    </div>
+                    <div class="imglist">
+                        <div class="item"><img src="../img/h3.jpg" alt=""></div>
+                        <div class="item"><img src="../img/h5.jpg" alt=""></div>
+                        <div class="item"><img src="../img/h4.jpg" alt=""></div>
+                    </div>
+                    <div class="gif1"><img src="../img/h1.gif" alt=""></div>
+                    <div class="gif2"><img src="../img/h2.png" alt=""></div>
+                </div>
+                <div id="huisheng" class="item3-2">
+                    <div class="tit">
+                        <div class="public-title">
+                            <span class="s1"><img src="../img/h42.png" alt=""></span>回到故宫
+                            <span class="s2"><img src="../img/h43.png" alt=""></span>
+                        </div>
+                        <p>一座宫一群人，13491箱文物，为了避免战火而辗转万里。<br>离家是为了回家</p>
+                        <div class="botton">
+                            <a href="">更多故宫动漫</a>
+                        </div>
+                    </div>
+                    <div class="box2 clearfix">
+                        <div class="img1 f1"><img src="../img/h7.png" alt=""></div>
+                        <div class="img f1"><img src="../img/h21.jpg" alt=""></div>
+                        <div class="img f1"><img src="../img/h23.jpg" alt=""></div>
+                        <div class="img f1"><img src="../img/h10.jpg" alt=""></div>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        $(window).scroll(function(event) {
+                            if($(window).scrollTop()>3500){
+                                $('.item4 .child').addClass('now');
+                            }
+                        });
+                    })
+                </script>
+                <div class="item4">
+                    <div class="icon"></div>
+                    <div class="child">
+                        <div class="text2">
+                            <div class="public-title">
+                              <span class="s1"><img src="../img/h42.png" alt=""></span>太和殿的脊兽
+                              <span class="s2"><img src="../img/h43.png" alt=""></span>  
+                            </div>
+                            <p>太和殿屋脊上的脊兽顺序都乱了<br>请把他们放在正确的位置</p>
+                        </div>
+                        <div class="img"><img src="../img/h28.png" alt=""></div>
+                    </div>
+                    <div class="nav"></div>
+                    <div class="botton">
+                        <a href="">更多故宫游戏</a>
+                    </div>
+                    <div class="botton1"><img src="../img/h13.png" alt=""></div>
+                </div>
+                <div id="app" class="item5">
+                    <div class="icon1"></div>
+                    <div class="icon"></div>
+                    <div class="icon2"></div>
+                    <div class="icon3"></div>
+                    <div class="arc">
+                        <div class="arcbox">
+                            <div class="img" style="top: -50.2607px;left: 166.921px;"><img src="../img/h29.png" alt=""></div>
+                            <div class="img" style="top: -32.619px;left: 306.345px;"><img src="../img/h30.png" alt=""></div>
+                            <div class="img" style="top: 48.559px;left: 412.813px;"><img src="../img/h31.png" alt=""></div>
+                            <div class="img" style="top: 167.5px;left: 452.5px;"><img src="../img/h32.png" alt=""></div>
+                            <div class="img" style="top: 286.441px;left: 412.813px;"><img src="../img/h33.png" alt=""></div>
+                            <div class="img" style="top: 367.619px;left: 306.354px;"><img src="../img/h34.png" alt=""></div>
+                            <div class="img" style="top: 385.261px;left: 166.921px;"><img src="../img/h35.png" alt=""></div>
+                            <div class="img" style="top: 333.765px;left: 38.7848px;"><img src="../img/h36.png" alt=""></div>
+                            <div class="img" style="top: 229.481px;left: -37.3732px;"><img src="../img/h37.png" alt=""></div>
+                            <div class="img" style="top: 105.519px;left: -37.3732px;"><img src="../img/h38.png" alt=""></div>
+                            <div class="img" style="top: 1.23509px;left: 38.7848px;"><img src="../img/h39.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="botton2">
+                        <a href="" class="prev"></a>
+                        <a href="" class="next"></a>
+                    </div>
+                    <div class="imgtextwarp">
+                        <div class="warp1">
+                            <div class="imglist"><img src="../img/h61.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="public-title">
+                            <span class="s1"><img src="../img/h42.png" alt=""></span>紫禁城
+                            <span class="s2"><img src="../img/h43.png" alt=""></span> 
+                        </div>
+                        <p>“紫禁城600”是故宫第一款以建筑为主题的App，唯美轻盈的画风一秒吸引大家走入建筑的神奇世界。全览地图快速定位前朝后寝，这里汇集大量故宫专家和学者的研究成果，昼夜切换两个模式，将引领大家探索建筑知识和它背后的宫廷故事。在这里，建筑不再枯燥冰冷，而是还原到历史环境中，就像被赋予生命，展示它更加清晰、有趣的一面。App还设置了科考版块，让大家可以通过闯关的方式迅速消化、巩固刚刚学到的知识，成为建筑小达人。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="horn h2"></div>
+        </div>
+    </div>	
+    </div> 
+    <div class="footer" id="footer">
+    <div class="wrap">
+        <div class="num" >
+            网站访问量
+            <span class="inner">
+                <i>1</i>
+                <i>2</i>
+                <i>3</i>
+                <i>4</i>
+                <i>5</i>
+                <i>6</i>
+                <i>7</i>
+                <i>8</i>
+                <i>9</i>
+            </span>
+        </div>
+        <div>
+            <div class="code2d">
+                <a></a><img src="../img/erweima.jpg"></div>
+        </div>
+        <div>
+            <div class="nav_foot">
+                <a href=""> 网站地图</a>&nbsp;&nbsp;
+                <a href=""> 相关链接</a>&nbsp;&nbsp;
+                <a href="" target="_blank"> 影像授权</a>&nbsp;&nbsp;
+                <a href="" target="_blank"> 隐私政策</a>&nbsp;&nbsp;
+                <a href="" target="_blank"> 版权声明</a>&nbsp;&nbsp;
+                <a href=""> 常见问题</a>&nbsp;&nbsp;
+                <a href=""> 联系我们</a>&nbsp;&nbsp;
+                <a href="" target="_blank"> 关于我们</a>&nbsp;&nbsp;</div>
+        </div>
+        <div>
+            <div class="copyright">
+
+                © 2001- 现在 故宫博物院 &nbsp;&nbsp;　京ICP备05067311号-1 &nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank">网站建设</a>：
+                <a href="" target="_blank">北京分形科技</a>
+            </div>
+
+            <div class="btns">
+                <a href="javascript:;">浏览建议</a>
+            </div>
+        </div>
+    </div>
+</div>  
+    </body>
+</html>
